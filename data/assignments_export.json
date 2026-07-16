@@ -1,0 +1,18 @@
+[
+  {
+    "id": 1,
+    "title": "physics",
+    "deadline": "2026-07-30",
+    "hours": "4",
+    "completed": false,
+    "priority": "High"
+  },
+  {
+    "id": 2,
+    "title": "Biolody",
+    "deadline": "2026-07-25",
+    "hours": "6",
+    "priority": "High",
+    "completed": false
+  }
+]
