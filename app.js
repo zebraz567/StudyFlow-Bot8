@@ -1,3 +1,6 @@
+const express = require("express");
+const web = express();
+
 require('dotenv').config();
 
 const { App } = require('@slack/bolt');
@@ -486,6 +489,19 @@ app.action("delete_assignment", async ({ ack, body, action, client}) => {
    });
 
   });
+
+web.use(express.static("public"));
+
+web.get("/", (req, res) => {
+    res.sendFile(__dirname + "/public/index.html");
+});
+
+const PORT = process.env.PORT || 3000;
+
+web.listen(PORT, () => {
+    console.log(`🌐 Website running on port ${PORT}`);
+});
+
 
 (async () => { 
     await app.start();
