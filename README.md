@@ -24,10 +24,11 @@ Ok now the to the main topic...
 - Export assignments to JSON 
 - And many more minor features
 
-TECH USED:
+## TECH USED:
 - Slack Bolt API
 - JavaScript
 - JSON File Storage
+- A cup of coffee
 
 ## INSTALLATION
 ```bash

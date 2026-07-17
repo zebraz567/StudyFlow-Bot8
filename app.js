@@ -60,7 +60,7 @@ app.message(async ({message, say})=>{
 
 if(text=== "list") {
       
-      const assignment = loadAssignments().filter(
+      const assignments = loadAssignments().filter(
         a => a.user === message.user
       );
 
@@ -116,7 +116,7 @@ if(text=== "list") {
                 type: "button",
                 text: {
                   type: "plain_text",
-                  text: "✅ Completed"
+                  text: "✅Completed"
                 },
                 style: "primary",
                 value: String(a.id),
@@ -185,7 +185,7 @@ if(text=== "list") {
         return;
       }
 
-      assignments = assignments.filter(a => a.id !== id && a.user === message.user);
+      assignments = assignments.filter(a => !(a.id === id && a.user === message.user));
 
       assignments.forEach((a, index) => {
         a.id = index + 1;
@@ -199,7 +199,7 @@ if(text=== "list") {
     
     if (text === "today") {
       
-      const assignment = loadAssignments().filter(a => a.user === message.user);
+      const assignments = loadAssignments().filter(a => a.user === message.user);
 
       const pending = assignments.filter(a => !a.completed);
 
@@ -241,7 +241,7 @@ if(text=== "list") {
 
     if(text === "stats") {
       
-      const assignment = loadAssignments().filter(a => a.user === message.user);
+      const assignments = loadAssignments().filter(a => a.user === message.user);
 
       const total = assignments.length;
       const completed = assignments.filter(a => a.completed).length;
@@ -311,7 +311,7 @@ if(text=== "list") {
     
     if(text === "upcoming") {
       
-      const assignment = loadAssignments().filter(a => a.user === message.user);
+      const assignments = loadAssignments().filter(a => a.user === message.user);
 
       const pending = assignments.filter(a => !a.completed);
 
@@ -357,8 +357,7 @@ if(text=== "list") {
       const id = parseInt(parts[0].trim());
       const assignments = loadAssignments();
       const assignment = assignments.find(a => a.id === id && a.user === message.user);
-      const assignment = assignments.find(a => a.id === id);
-
+      
         if(!assignment) {
           await say("❌ Assignment not found.");
           return;
@@ -380,7 +379,7 @@ if(text=== "list") {
 
       const keyword = text.substring(5).trim().toLowerCase();
       
-      const assignment = loadAssignments().filter(a => a.user === message.user);
+      const assignments = loadAssignments().filter(a => a.user === message.user);
 
       const results = assignments.filter(a =>
          a.title.toLowerCase().includes(keyword)
@@ -409,7 +408,7 @@ if(text=== "list") {
 
     if(text === "export") {
       
-      const assignment = loadAssignments().filter(a => a.user === message.user);
+      const assignments = loadAssignments().filter(a => a.user === message.user);
 
       if(assignments.length === 0) {
         await say("📚 No assignments to export.");
@@ -472,7 +471,7 @@ app.action("delete_assignment", async ({ ack, body, action, client}) => {
     return;
   }
 
-  assignments = assignments.filter(a => !(a.id !== id && a.user === body.user.id)
+  assignments = assignments.filter(a => !(a.id === id && a.user === body.user.id)
    );
 
    assignments.forEach((a, index) => {
