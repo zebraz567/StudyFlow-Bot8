@@ -66,7 +66,10 @@ Command | Description |
 | help | Show help |
 
 ## SCREENSHOT
-_Add screenshots here after deployment._
+![StudyFlow Bot](screenshots/Screenshot(73).png)
+![StudyFlow Bot](screenshots/Screenshot(74).png)
+![StudyFlow Bot](screenshots/Screenshot(75).png)
+![StudyFlow Bot](screenshots/Screenshot(76).png)
 
 ## AUTHOR
 Created by Not_A_Zebra
