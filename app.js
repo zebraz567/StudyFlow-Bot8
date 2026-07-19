@@ -499,7 +499,7 @@ web.get("/", (req, res) => {
 const PORT = process.env.PORT || 3000;
 
 web.listen(PORT, () => {
-    console.log(`🌐 Website running on port ${PORT}`);
+    console.log(` `);
 });
 
 
