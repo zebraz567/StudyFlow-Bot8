@@ -3,7 +3,7 @@
 ## INFO ABOUT MAKING OF THIS:
 
 This is my first project about a Slack bot .
-I actually made it to participate in a YSWS Program named : 'Thing on Desk'.
+I actually made it to participate in a YSWS Program named : 'Macondo'.
 
 This bot is made completely using Java-Script in VS Code.(and also buitl with Node.js)
 
