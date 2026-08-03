@@ -54,7 +54,7 @@ SLACK_SIGNING_SECRET=
 ## COMMANDS
 Command | Description |
 |----------|-------------|
-| add Title \| Deadline \| Hours \| Priority | Add assignment |
+| add Title \| Deadline \| Hours                    | Add assignment |
 | list | Show assignments |
 | done ID | Mark assignment complete |
 | delete ID | Delete assignment |
