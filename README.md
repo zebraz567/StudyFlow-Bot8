@@ -55,7 +55,7 @@ SLACK_SIGNING_SECRET=
 (it is actually not a/"slash" command, u need to type the commands as mentioned here!)
 Command | Description |
 |----------|-------------|
-| add Title \| Deadline \| Hours                    | Add assignment |
+| add Title \| Deadline \| Hours \| Priority                   | Add assignment |
 | list | Show assignments |
 | done ID | Mark assignment complete |
 | delete ID | Delete assignment |
