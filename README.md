@@ -52,7 +52,7 @@ SLACK_SIGNING_SECRET=
 ```
 
 ## COMMANDS
-(it is actually not a/"slash" command, u need to type the commands as mentioned here!)
+(it is actually not a/"slash" command, u need to type the commands as mentioned here!, it is also Case-sensitive)
 Command | Description |
 |----------|-------------|
 | add Title \| Deadline \| Hours \| Priority                   | Add assignment |
