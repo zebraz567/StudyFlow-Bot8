@@ -68,10 +68,10 @@ Command | Description |
 | help | Show help |
 
 ## SCREENSHOT
-![StudyFlow Bot](Screenshot(73).png)
-![StudyFlow Bot](Screenshot(74).png)
-![StudyFlow Bot](Screenshot(75).png)
-![StudyFlow Bot](Screenshot(76).png)
+![StudyFlow Bot](Screenshot (73).png)
+![StudyFlow Bot](Screenshot (74).png)
+![StudyFlow Bot](Screenshot (75).png)
+![StudyFlow Bot](Screenshot (76).png)
 
 ## AUTHOR
 Created by Not_A_Zebra
