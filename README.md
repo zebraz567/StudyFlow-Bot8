@@ -68,7 +68,7 @@ Command | Description |
 | help | Show help |
 
 ## SCREENSHOT
-![StudyFlow Bot](screenshots/Screenshot-73.png)
+![StudyFlow Bot](screenshots/Screenshot(73).png)
 ![StudyFlow Bot](screenshots/Screenshot(74).png)
 ![StudyFlow Bot](screenshots/Screenshot(75).png)
 ![StudyFlow Bot](screenshots/Screenshot(76).png)
